@@ -34,7 +34,7 @@ def takeCommand():
 
 def get_temperature(city):
     # Your OpenWeatherMap API key
-    api_key = "908d8372b31bc0dccbc6e404d9115a08"
+    api_key = "YOUR__API_KEY"
     # Endpoint for the current weather
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     
