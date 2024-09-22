@@ -5,16 +5,15 @@ import schedule
 import time
 import threading
 
-# Initialize the speech engine
+
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)  # Set to female voice or change index as per requirement
+engine.setProperty('voice', voices[1].id)  
 engine.setProperty("rate", 170)
 
 preferences = {
-    "sector": "business",  # Default sector
-    "country": "us"        # Default country code
-}
+    "sector": "business",  
+    "country": "us"        
 
 def speak(audio):
     engine.say(audio)
@@ -37,7 +36,7 @@ def takeCommand():
         return "None"
     return query.lower()
 
-# GNews query categories for each sector
+
 sector_keywords = {
     "business": "business",
     "sports": "sports",
@@ -47,10 +46,10 @@ sector_keywords = {
     "science": "science"
 }
 
-# Function to fetch news from GNews based on sector and country
+
 def fetch_news_from_gnews(sector, country):
     keyword = sector_keywords.get(sector, "")
-    url = f"https://gnews.io/api/v4/top-headlines?lang={country}&topic={keyword}&token=182548e3893ded125a49cab4a66ad606"
+    url = f"https://gnews.io/api/v4/top-headlines?lang={country}&topic={keyword}&token=YOUR API KEY"
 
     try:
         response = requests.get(url)
@@ -90,16 +89,16 @@ def fetch_news_from_gnews(sector, country):
         print(f"Error fetching news from GNews: {e}")
         speak(f"Sorry, there was an issue fetching news for {sector} in {country}. Please try again later.")
 
-# Notification function
+
 def notify_news():
-    sector = preferences.get('sector', 'business')  # Default to business if not set
-    country_code = preferences.get('country', 'us')  # Default to US if not set
+    sector = preferences.get('sector', 'business')  
+    country_code = preferences.get('country', 'us')  
     fetch_news_from_gnews(sector, country_code)
 
-# Schedule notifications every hour
+
 schedule.every().hour.at(":00").do(notify_news)
 
-# Main function to handle news requests
+
 def latestnews():
     while True:
         speak("Which sector do you want news from? Choose from business, sports, political, health, technology, or science.")
@@ -119,23 +118,22 @@ def latestnews():
             speak("Stopping news updates.")
             break
 
-        # Here you can map country names to their codes if needed
-        # For now, we assume the user provides a valid country code
+       
         preferences['sector'] = sector
-        preferences['country'] = country  # Set user preference
+        preferences['country'] = country  
 
-        # Fetch news based on user-selected sector and country
+      
         fetch_news_from_gnews(sector, country)
 
-# Function to run the scheduler in a separate thread
+
 def run_schedule():
     while True:
         schedule.run_pending()
-        time.sleep(1)  # Sleep for a short time to avoid high CPU usage
+        time.sleep(1) 
 
-# Start the scheduler in a separate thread
+
 threading.Thread(target=run_schedule, daemon=True).start()
 
-# Example call to the main function
+
 if __name__ == "__main__":
     latestnews()
