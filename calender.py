@@ -6,16 +6,16 @@ from playsound import playsound
 import pyttsx3
 import speech_recognition as sr
 
-
-API_KEY = "your api key " 
+# Calendarific API details
+API_KEY = "esvssrUtUpn85a7JvTnO5w1EnpdnJ2DT"  # Replace with your API key from Calendarific
 BASE_URL = "https://calendarific.com/api/v2/holidays"
 
 class Calendar:
     def __init__(self):
-        self.events = {} 
+        self.events = {}  # Dictionary to hold events
         self.engine = pyttsx3.init("sapi5")
         voices = self.engine.getProperty('voices')
-        self.engine.setProperty('voice', voices[1].id) 
+        self.engine.setProperty('voice', voices[1].id)  # Set to female voice or change index as per requirement
         self.engine.setProperty("rate", 170)
 
     def speak(self, audio):
@@ -156,7 +156,7 @@ class Calendar:
         except requests.exceptions.RequestException as e:
             self.speak("Error fetching festivals.")
 
-
+# Example of how to use the Calendar class
 if __name__ == "__main__":
     calendar = Calendar()
 
