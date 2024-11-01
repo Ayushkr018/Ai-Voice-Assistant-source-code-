@@ -147,8 +147,9 @@ IoT Integration:
 
 Connect with smart IoT devices for home automation tasks.
 Contributing
-Contributions are welcome! To contribute:
+Contributions are welcome!
 
+To contribute:
 Fork the project.
 Create a new branch for your feature (git checkout -b feature-name).
 Commit your changes (git commit -m 'Add feature').
