@@ -8,11 +8,7 @@
 [![Privacy First](https://img.shields.io/badge/Privacy-First-red.svg)](https://github.com)
 
 </div>
-Add kro iske aage:
 
-text
-
----
 
 ## 🌟 **Overview**
 
@@ -260,7 +256,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
 
-### 🌟 **Made with ❤️ by [Your Name]** 🌟
+### 🌟 **Made with ❤️ by Ayush Kumar🌟
 
 *Ellyse - Because everyone deserves a smart, caring, and private assistant*
 
