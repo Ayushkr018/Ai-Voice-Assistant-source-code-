@@ -1,9 +1,8 @@
 🎙️ Ellyse - Your Virtual Ace Voice Assistant
 <div align="center">
-![Ellyse Logo](https://img.shields.io/badge/🎙️%20Ellyse-Virtual%20Ace%20Voice%20Assistant-brightgreen?style= with intelligent voice automation that understands, learns, and adapts to your daily workflow**
+![Ellyse Voice Assistant](https://img.shields.io/badge/🎙️%20Ellyse-Virtual%20Voice%20Assistant-blue?style= that understands, learns, and adapts to your daily workflow**
 
-[
-[![SpeechRecognitionhttps://img.shields.io/badge/https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white](https://img.shields.io/badge/Wikipedia-000000?style=flat-square&logo=wikipedia&logoColor=white.shields.io/badge/License-MIT-yellow.svg?style.shields.io/badge/PRs-welcome-brightgreen.svgshields.io/badge/Contents
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python&d](https://img.shields.io](https://img.shields.io/badge/Platform: MIT](https://img.shields.io/badge/License-MIT-yellow..io/badge/PRs-welcome-brightgreen.svg?style=
 
 ✨ Features
 
@@ -75,15 +74,6 @@ System Control - Manage computer functions with voice
 
 File Operations - Open, close, and organize files vocally
 
-🎓 Student & Professional Features
-Study Session Manager - Pomodoro timers with focus tracking
-
-Research Assistant - Quick fact-checking and academic support
-
-Meeting Scheduler - Professional appointment management
-
-Workflow Automation - Custom voice macros for repetitive tasks
-
 🚀 Quick Start
 bash
 # Clone the repository
@@ -131,30 +121,25 @@ text
 "Compose an email to my boss about the project update"
 "Read my latest messages"
 "Call Sarah on speaker"
-🎵 Entertainment & Control
-text
-"Play my workout playlist"
-"Turn off my computer"
-"Open Visual Studio Code"
-"Close all browser tabs"
-"Set system volume to 50%"
 🛠️ Technical Stack
 Core Technologies
-python
 Language: Python 3.8+
-Speech Recognition: SpeechRecognition 3.10+
-Text-to-Speech: pyttsx3 2.90+
+
+Speech Recognition: SpeechRecognition library
+
+Text-to-Speech: pyttsx3
+
 AI Processing: OpenAI GPT Integration
-Audio Processing: PyAudio 0.2.11+
+
+Audio Processing: PyAudio
+
 API Integrations
-🌤️ OpenWeatherMap - Weather forecasting and alerts
+OpenWeatherMap - Weather forecasting and alerts
 
-📰 News API - Real-time news aggregation
+News API - Real-time news aggregation
 
-📚 Wikipedia API - Knowledge base access
+Wikipedia API - Knowledge base access
 
-🧮 WolframAlpha - Computational intelligence
+WolframAlpha - Computational intelligence
 
-📱 WhatsApp Business API - Messaging capabilities
-
-✉️ Gmail API - Email management
+WhatsApp Business API - Messaging capabilities
